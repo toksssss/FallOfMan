@@ -32,7 +32,7 @@ async def cmd_add(message: types.Message):
     await telegram_noti(count, message.from_user.full_name)
 
 async def telegram_noti(_count : int, _username : str) -> None:
-    group_id = "-4673623248"
+    group_id = ""
     text = f"БУМ! {_username} имеет на счету {_count} очков! "
     await bot.send_message(chat_id=group_id, text=text)
 
